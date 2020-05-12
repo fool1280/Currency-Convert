@@ -14,8 +14,6 @@ function coinChange() {
     document.getElementById("result").innerHTML = `${text}`;
 }
 
-let amountInput = document.getElementById("amount");
-
 let convertButton = document.getElementById('convertButton');
 convertButton.addEventListener("click",coinChange);
 
