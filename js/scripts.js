@@ -16,6 +16,13 @@ function convertCurrency() {
     document.getElementById("result").innerHTML = `${formatCurrency(currencyFormat[inp], inp, amount)} = ${formatCurrency(currencyFormat[out], out, result)}`;
 }
 
+function swap() {
+  var inp = document.getElementById("inputCurrency").value;
+  var out = document.getElementById("outputCurrency").value;
+  document.getElementById("inputCurrency").value = out;
+  document.getElementById("outputCurrency").value = inp;
+}
+
 let amountInput = document.getElementById("amount");
 
 let inputCurrency = document.getElementById("inputCurrency");
@@ -23,4 +30,7 @@ let outputCurrency = document.getElementById("outputCurrency");
 
 let convertButton = document.getElementById('convertButton');
 convertButton.addEventListener("click",convertCurrency);
+
+
+
 
